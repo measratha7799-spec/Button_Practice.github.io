@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttom Practice</title>
+</head>
+
+<style>
+    button{
+        border: none;
+        padding: 10px 20px;
+        margin-left: 10px;
+    }
+    /* Primary */
+    .part1 .p1{
+        font-family: sans-serif;
+        font-size: 32px;
+    }
+    
+    .part1 .btn1{
+        color: white;
+        background-color: blue;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .part1 .btn2{
+        color: white;
+        background-color: black;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .part1 .btn3{
+        color: black;
+        background-color: transparent;
+        /* transparent : use for none colore */
+        border-radius: 20px;
+        cursor: pointer;
+        border: solid;
+        border-width: 2px;
+    }
+
+    /* Booking */
+    .part2 .p2{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 32px;
+    }
+
+    .part2 .btn1{
+        color: white;
+        background-color: rgb(255, 0, 247);
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+    .part2 .btn1:hover{
+        background-color: rgb(149, 2, 144);
+        outline: 2px solid black;
+    }
+
+    .part2 .btn2{
+        color: white;
+        background-color: green;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+    .part2 .btn2:hover{
+        background-color: transparent;
+        color: green;
+        outline: 2px solid green;
+    }
+
+    .part2 .btn3{
+        color: black;
+        background-color: transparent;
+        border-radius: 20px;
+        outline: 2px solid black;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+    .part2 .btn3:hover{
+        background-color: black;
+        color: white;
+        border: none;
+    }
+
+    /* Department */
+    .part3 .p3{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 28px;
+    }
+
+    .part3 .btn1{
+        color: white;
+        background-color: red;
+        border-radius: 5px;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+    .part3 .btn1:hover{
+        background-color: rgb(222, 3, 3);
+        transform: scale(0.9);
+    }
+
+    .part3 .btn2{
+        color: black;
+        background-color: yellow;
+        border-radius: 5px;
+        transition: all 0.3s;
+        cursor: pointer;
+    }
+    .part3 .btn2:hover{
+        background-color: rgb(179, 179, 1);
+        transform: rotate(-90deg);
+    }
+
+    .part3 .btn3{
+        background-color: aqua;
+        color: black;
+        border-radius: 20px;
+        transition: all 0.3s;
+        cursor: pointer;
+    }
+    .part3 .btn3:hover{
+        background-color: rgb(1, 187, 187);
+        transform: scale(1.1);
+    }
+
+</style>
+
+<body>
+    <div class="part1">
+        <p class="p1"><b>Primary</b></p>
+
+        <Button class="btn1">Pick Me</Button>
+        <button class="btn2">Let's go</button>
+        <button class="btn3">Submit</button>
+    </div>
+
+    <div class="part2">
+        <p class="p2"><b>Booking</b></p>
+
+        <button class="btn1">Book Now</button>
+        <button class="btn2">Book Later</button>
+        <button class="btn3">Not Book</button>
+    </div>
+
+    <div class="part3">
+        <h3 class="p3">Department</h3>
+
+        <button class="btn1">Hotel</button>
+        <button class="btn2">Dorm</button>
+        <button class="btn3">House</button>
+    </div>
+
+</body>
+</html>
